@@ -25,6 +25,10 @@ module.exports = {
                     })
                     break
                 default:
+                    res.status(400).send({
+                        error: 'We could not register you at this time. Please try again'
+                    })
+                    break;
             }
         }
         else{
