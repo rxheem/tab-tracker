@@ -1,11 +1,13 @@
-console.log('Hello');
+console.log('Hello')
 
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const {sequelize} = require('./models')
-const config = require('.config/config')
+console.log('Getting config next ')
+// const config = require('./config')
+console.log('Got it')
 
 const app = express()
 app.use(morgan('combined'))
