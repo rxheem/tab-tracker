@@ -1,19 +1,17 @@
-
-
 <template>
   <div>
     <h1>Register</h1>
 
-    <input type="email" 
-      name="email" 
-      id="email" 
+    <input type="email"
+      name="email"
+      id="email"
       v-model="email"
       placeholder="Enter email here"
     />
 
-    <input 
-      type="password" 
-      name="password" 
+    <input
+      type="password"
+      name="password"
       v-model="password"
       id="password"
       placeholder="Enter password"
@@ -29,7 +27,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      email: '', 
+      email: '',
       password: ''
     }
   },
@@ -39,10 +37,8 @@ export default {
         email: this.email,
         password: this.password
       })
-
       console.log(response.data)
     }
   }
 }
 </script>
-
